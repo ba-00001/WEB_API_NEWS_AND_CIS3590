@@ -223,11 +223,12 @@
          try {
              // Use CORS Anywhere proxy to bypass CORS issues
              const apiKey = 'b8f481ac86764640bc0a3e7e6cd7fbc7'; // Replace with your actual API key
-             const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+             const proxyUrl = 'https://cors-anywhere.herokuapp.com/';//cors proxy does not work on github pages to do a serverless api call
              const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
              
-             // Fetch data from the API with CORS proxy
-             const response = await fetch('json_file.json');
+             // Fetch data from the API with CORS proxy // proxyUrl + apiUrl
+             const response = await fetch('json_file.json'); //api call works on local server but not on github pages so i used a json file
+             //github pages does not support api calls
              const data = await response.json();
              
              // Process and display the data
