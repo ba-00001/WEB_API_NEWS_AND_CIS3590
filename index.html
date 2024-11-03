@@ -222,19 +222,19 @@
 
         async function fetchNews() {
             try {
-                const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`);
+                // Call the Netlify function instead of the News API directly
+                const response = await fetch("/.netlify/functions/fetchNews");
                 const data = await response.json();
                 
+                // Process and display the data as usual
+                const newsContainer = document.getElementById("news-content");
                 if (data.articles) {
-                    const articlesWithImages = data.articles.filter(article => article.urlToImage);
-                    const randomArticles = articlesWithImages.sort(() => 0.5 - Math.random()).slice(0, 5);
-
-                    randomArticles.forEach(article => {
+                    data.articles.slice(0, 5).forEach(article => {
                         const newsItem = document.createElement("div");
                         newsItem.classList.add("col-md-4", "mb-4");
                         newsItem.innerHTML = `
                             <div class="card h-100">
-                                <img src="${article.urlToImage}" class="card-img-top" alt="${article.title}">
+                                <img src="${article.urlToImage || 'assets/img/placeholder.jpg'}" class="card-img-top" alt="${article.title}">
                                 <div class="card-body">
                                     <h5 class="card-title">${article.title}</h5>
                                     <p class="card-text"><strong>Author:</strong> ${article.author || 'Unknown'}</p>
@@ -250,12 +250,13 @@
                 }
             } catch (error) {
                 console.error("Error fetching news:", error);
-                newsContainer.innerHTML = "<p>Error loading news.</p>";
+                document.getElementById("news-content").innerHTML = "<p>Error loading news.</p>";
             }
         }
 
         // Fetch news on page load
         fetchNews();
+
     </script>
 </body>
 </html>
