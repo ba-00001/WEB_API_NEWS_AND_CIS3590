@@ -23,7 +23,6 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#news">Latest News</a></li>
-                    
                 </ul>
             </div>
         </div>
@@ -36,11 +35,16 @@
                 <div class="text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Group-1B-Java</h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5">Project by Brian Bazurto and Leo, Santiago and Rani</h2>
-                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <!-- Buttons Container with Flex Alignment -->
+                    <div class="d-flex justify-content-center gap-3">
+                        <a class="btn btn-primary" href="#projects">View Projects</a>
+                        <a href="reflection.html" class="btn btn-secondary">Go to Final Reflections</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    
 
     <!-- Projects Section-->
     <section class="projects-section bg-light" id="projects">
@@ -48,29 +52,26 @@
             <h2 class="text-center mb-4">Project Videos</h2>
 
             <!-- Brian's Project: Hare and Tortoise Algorithm -->
-                <!-- Brian's Project: Hare and Tortoise Algorithm -->
-                <div class="row gx-0 mb-5 mb-lg-5 align-items-center">
-                    <div class="col-lg-6">
-                        <!-- Embedded YouTube Video -->
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/--h--ChjcQE" 
-                                title="Brian's Project: Hare and Tortoise Algorithm" frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Brian: Hare and Tortoise Algorithm</h4>
-                                    <p class="mb-0 text-white-50">Repository: TheAlgorithms - Java | Issue #5693</p>
-                                    <p class="mb-0 text-white-50">An algorithm for cycle detection in sequences, widely used in technical interviews.</p>
-                                    <a href="https://www.youtube.com/watch?v=--h--ChjcQE" target="_blank" class="btn btn-primary mt-3">Watch on YouTube</a>
-                                </div>
+            <div class="row gx-0 mb-5 mb-lg-5 align-items-center">
+                <div class="col-lg-6">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/--h--ChjcQE" 
+                            title="Brian's Project: Hare and Tortoise Algorithm" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Brian: Hare and Tortoise Algorithm</h4>
+                                <p class="mb-0 text-white-50">Repository: TheAlgorithms - Java | Issue #5693</p>
+                                <p class="mb-0 text-white-50">An algorithm for cycle detection in sequences, widely used in technical interviews.</p>
+                                <a href="https://www.youtube.com/watch?v=--h--ChjcQE" target="_blank" class="btn btn-primary mt-3">Watch on YouTube</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
+            </div>
 
             <!-- Leo's Project: Moore's Voting Algorithm -->
             <div class="row gx-0 mb-5 align-items-center">
@@ -83,9 +84,7 @@
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="text-white">Leo: Moore's Voting Algorithm</h4>
                                 <p class="mb-0 text-white-50">Uses a candidate and counter to verify the majority element in a set.</p>
-                                <!-- Updated button to link to Google Doc -->
-                                <a href="https://docs.google.com/document/d/1QDycx5ckr3kh9E2sK88v6lhtCtETgf4V2EAyO3S1Nqo/edit?usp=sharing" 
-                                target="_blank" class="btn btn-primary mt-3">VIDEO LINK</a>
+                                <a href="https://docs.google.com/document/d/1QDycx5ckr3kh9E2sK88v6lhtCtETgf4V2EAyO3S1Nqo/edit?usp=sharing" target="_blank" class="btn btn-primary mt-3">VIDEO LINK</a>
                             </div>
                         </div>
                     </div>
@@ -103,9 +102,7 @@
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white">Santiago: Travelling Salesman Problem</h4>
                                 <p class="mb-0 text-white-50">Finds the shortest possible route to visit each city exactly once and return.</p>
-                                <!-- Updated button to link to Google Doc -->
-                                <a href="https://docs.google.com/document/d/1QDycx5ckr3kh9E2sK88v6lhtCtETgf4V2EAyO3S1Nqo/edit?usp=sharing" 
-                                target="_blank" class="btn btn-primary mt-3">VIDEO LINK</a>
+                                <a href="https://docs.google.com/document/d/1QDycx5ckr3kh9E2sK88v6lhtCtETgf4V2EAyO3S1Nqo/edit?usp=sharing" target="_blank" class="btn btn-primary mt-3">VIDEO LINK</a>
                             </div>
                         </div>
                     </div>
@@ -123,157 +120,22 @@
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="text-white">Rani: Shuffling Algorithm</h4>
                                 <p class="mb-0 text-white-50">Implements a randomized order of elements, ensuring true randomness.</p>
-                                <!-- Updated button to link to Google Doc -->
-                                <a href="https://docs.google.com/document/d/1QDycx5ckr3kh9E2sK88v6lhtCtETgf4V2EAyO3S1Nqo/edit?usp=sharing" 
-                                target="_blank" class="btn btn-primary mt-3">VIDEO LINK</a>
+                                <a href="https://docs.google.com/document/d/1QDycx5ckr3kh9E2sK88v6lhtCtETgf4V2EAyO3S1Nqo/edit?usp=sharing" target="_blank" class="btn btn-primary mt-3">VIDEO LINK</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
-
-  <!-- Latest News Section (using News API) -->
-<section class="bg-light" id="news">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mb-4">Latest News</h2>
-        <div id="news-content" class="row gx-4 gx-lg-5 justify-content-center">
-            <!-- News articles will be loaded here by JavaScript -->
-        </div>
-        
-        <!-- Detailed API Documentation Section -->
-        <div class="mt-5">
-            <h3>API Integration Documentation</h3>
-            <p>This section provides a detailed breakdown of the News API integration, fulfilling the project’s assignment requirements for documentation, API usage, testing, and KPIs.</p>
-
-            <h4>API Purpose and Overview</h4>
-            <p>The News API is used to fetch the latest news headlines from various sources globally. For this project, we selected the <strong>top-headlines</strong> endpoint to dynamically retrieve and display the latest news articles. This helps demonstrate our ability to integrate third-party APIs to pull and display live data, keeping the content fresh with each page load.</p>
-
-            <h4>Implementation and Usage</h4>
-            <p>The API integration was implemented using JavaScript with the Fetch API, allowing us to retrieve JSON-formatted news data directly from the News API service.</p>
-            <ul>
-                <li><strong>Endpoint:</strong> <code>https://newsapi.org/v2/top-headlines</code></li>
-                <li><strong>Query Parameters:</strong>
-                    <ul>
-                        <li><code>country=us</code>: Filters news articles to U.S.-based sources.</li>
-                        <li><code>sortBy=publishedAt</code>: Ensures articles are sorted by the latest publication date.</li>
-                        <li><code>apiKey=YOUR_API_KEY</code>: Secures the API request with a unique key.</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h4>Features Implemented</h4>
-            <p>The integration uses JavaScript to dynamically display the latest articles with the following features:</p>
-            <ul>
-                <li>Randomized selection from articles with images, ensuring variety in displayed news.</li>
-                <li>Display of each article’s <strong>title</strong>, <strong>author</strong>, <strong>publish date</strong>, <strong>content</strong>, and <strong>image</strong>.</li>
-                <li>Error handling to manage any issues in API response or connectivity.</li>
-            </ul>
-
-            <h4>API Risks and Opportunities</h4>
-            <p>API integration comes with various strengths and limitations, which we carefully considered:</p>
-            <ul>
-                <li><strong>Strengths:</strong> Real-time data keeps content relevant. The News API is highly reliable with reputable sources.</li>
-                <li><strong>Limitations:</strong> The free tier limits the number of requests per day, which may restrict content updates if traffic is high. Paid tiers offer higher limits but at a cost.</li>
-            </ul>
-
-            <h4>Effective Use of the API</h4>
-            <p>To meet the project requirements, the API was properly documented, and the code was modularized for easy maintenance. A <strong>structured documentation approach</strong> was followed, including clear variable names, descriptive comments, and formatted output to improve readability and usability. The JavaScript function <code>fetchNews()</code> encapsulates the entire process, enhancing code clarity and efficiency.</p>
-
-            <h4>Code Review</h4>
-            <p>In line with project guidelines, all code follows JavaScript best practices, including naming conventions, modularization, and size control for each function. Variables are self-explanatory, and code is consistently structured to avoid redundancy. We ensured readability and maintainability by adhering to the code review checklist provided in class.</p>
-
-            <h4>Code Documentation</h4>
-            <p>The <code>fetchNews()</code> function is thoroughly documented with comments explaining each line of code. Key variables are annotated, and steps within the function are described. Annotations are used to make the codebase understandable for future developers or users who may reference this implementation.</p>
-
-            <h4>Code Testing</h4>
-            <p>Unit testing was implemented to verify that each step of the API fetch function works correctly:</p>
-            <ul>
-                <li><strong>API Connectivity Test:</strong> Verifies successful connection to the News API.</li>
-                <li><strong>Content Test:</strong> Checks that each fetched article includes required fields, such as title, author, and image URL.</li>
-                <li><strong>Error Handling Test:</strong> Ensures that the function gracefully handles API errors or network issues by displaying an error message.</li>
-            </ul>
-
-            <h4>KPIs and OKRs</h4>
-            <p>Key Performance Indicators (KPIs) and Objectives and Key Results (OKRs) were established to measure the effectiveness of the API integration:</p>
-            <ul>
-                <li><strong>KPI 1:</strong> Content Freshness - Measure the API’s ability to deliver the latest articles. Goal: At least 80% of displayed articles are published within the last 24 hours.</li>
-                <li><strong>KPI 2:</strong> Error Rate - Track instances of failed API requests. Goal: Less than 5% error rate during normal operation.</li>
-                <li><strong>OKR 1:</strong> Improve Page Load Efficiency by reducing the time taken to fetch and display articles, with a target to load within 2 seconds.</li>
-            </ul>
-
-            <h4>Passing Criteria and Evaluation</h4>
-            <p>Based on the criteria provided, this API integration meets the following:</p>
-            <ul>
-                <li>Full API functionality description, covering strengths, limitations, and usage documentation.</li>
-                <li>Proper implementation with complete documentation and error handling.</li>
-                <li>Comprehensive code review for adherence to best practices.</li>
-                <li>Code testing includes connectivity, content validation, and error handling.</li>
-                <li>Defined KPIs and OKRs to measure API performance and project success.</li>
-            </ul>
-            <p>This thorough integration and documentation provide a robust example of API usage, fulfilling the assignment’s requirements and showcasing professional API management practices.</p>
-        </div>
-    </div>
-</section>
-
 
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
         <div class="container px-4 px-lg-5">Copyright &copy; Group-1B-Java Project 2024</div>
     </footer>
 
- <!-- Bootstrap core JS-->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
- <script src="js/scripts.js"></script>
-
- <!-- News API Integration Script -->
- <script>
-     const newsContainer = document.getElementById("news-content");
-
-     async function fetchNews() {
-         try {
-             // Use CORS Anywhere proxy to bypass CORS issues
-             const apiKey = 'b8f481ac86764640bc0a3e7e6cd7fbc7'; // Replace with your actual API key
-             const proxyUrl = 'https://cors-anywhere.herokuapp.com/';//cors proxy does not work on github pages to do a serverless api call
-             const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
-             
-             // Fetch data from the API with CORS proxy // proxyUrl + apiUrl
-             const response = await fetch('json_file.json'); //api call works on local server but not on github pages so i used a json file
-             //github pages does not support api calls
-             const data = await response.json();
-             
-             // Process and display the data
-             if (data.articles) {
-                 data.articles.slice(0, 5).forEach(article => {
-                     const newsItem = document.createElement("div");
-                     newsItem.classList.add("col-md-4", "mb-4");
-                     newsItem.innerHTML = `
-                         <div class="card h-100">
-                             <img src="${article.urlToImage || 'assets/img/placeholder.jpg'}" class="card-img-top" alt="${article.title}">
-                             <div class="card-body">
-                                 <h5 class="card-title">${article.title}</h5>
-                                 <p class="card-text"><strong>Author:</strong> ${article.author || 'Unknown'}</p>
-                                 <p class="card-text"><strong>Published:</strong> ${new Date(article.publishedAt).toLocaleDateString()}</p>
-                                 <p class="card-text">${article.content || article.description || ''}</p>
-                                 <a href="${article.url}" target="_blank" class="btn btn-primary">Read more</a>
-                             </div>
-                         </div>`;
-                     newsContainer.appendChild(newsItem);
-                 });
-             } else {
-                 newsContainer.innerHTML = "<p>No news articles found.</p>";
-             }
-         } catch (error) {
-             console.error("Error fetching news:", error);
-             newsContainer.innerHTML = "<p>Error loading news.</p>";
-         }
-     }
-
-     // Fetch news on page load
-     fetchNews();
- </script>
-
-
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
